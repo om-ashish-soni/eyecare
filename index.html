@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20-20-20 Rule Reminder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+        }
+
+        button:active {
+            background-color: #0056b3;
+        }
+
+        #status {
+            font-weight: bold;
+            color: green;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>20-20-20 Rule Reminder</h1>
+        <p>Status: <span id="status">Activated</span></p>
+        <button onclick="activate()">Activate</button>
+        <button onclick="deactivate()">Deactivate</button>
+        <button onclick="toggleSpeechMode()">Speech Mode: <span id="speechMode">On</span></button>
+        <footer>Made with ❤️ by Om Ashish Soni</footer>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
